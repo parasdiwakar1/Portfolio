@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    body{
+        position: relative;
+        bottom: 5px;
+        right: 5px;
+    }
+
+    .opction{
+        width: 97.3vw;
+        height: 7vh;
+        font-size: 1.8vw;
+        background-color: rgb(18, 17, 17);
+        display: flex;   
+    }
+
+    nav{
+        position:fixed;
+        border: dotted 3px white;
+        z-index: 1;
+    }
+
+    .home{
+        box-sizing: border-box;
+        height: 3vh;
+        width: 4vw;
+        display: inline-block;
+        justify-content: space-between;
+        margin: 20px;
+        color:white; 
+    }
+
+    .home:hover{
+        color: red; 
+    }
+
+    .box1{
+        background-image: url(https://t4.ftcdn.net/jpg/05/18/41/91/360_F_518419158_yXXBww2r5Z3XoutBxRX8KHNZOpPjhC03.jpg);
+        display:flex;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        align-items: center;
+        justify-content: center;
+        width: 97.5vw;
+        height:90vh ;
+       
+    }
+
+    .box1:hover{
+        background-image: url(https://png.pngtree.com/background/20210710/original/pngtree-blue-technology-internet-background-picture-image_1018917.jpg);
+    }
+    
+    .box1-img1> img{
+        height: 60%;
+        width: 60%;
+        border: 5px solid rgb(26, 26, 27);
+        border-radius: 20% ;
+        box-shadow: 10px 10px 20px white;
+        margin: 10px;
+    }
+        
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        font-size: 4vw;
+        color: white;
+        font-family: sans-serif;
+        gap: 20px;
+        position: relative;
+        right: 10vw;
+    }
+
+    .header1{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .samp{
+        color: red;
+    }
+    
+    .header2{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .cal-a{
+        color: white;
+    }
+
+    .cal-a:hover{
+        color: red;
+    }
+
+    .h-button{
+        display: flex;
+        border: 3px solid red;
+        height: 5.5vh;
+        width: 20vw;
+        color: red;
+        font-size: 3vw;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        background-color: white;
+        box-shadow: 10px 10px 20px red;
+    }
+
+    
+    .h-button:hover{
+        color:white;
+        background-color: blue;
+    }
+    
+    .box2{
+        width: 97.5vw;
+        height:112vh ;
+        background-image: url(https://s3.envato.com/files/cc0281f1-fe62-4597-bde9-ae8a938d8cc5/inline_image_preview.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .coding-img{
+        display: flex;
+        height: 70%;
+        width: 90%;
+    }
+
+    .coding{
+        border-radius: 20px;
+        height: 100%;
+        width: 60%;
+        box-shadow: 10px 10px 20px white;
+    }
+    
+    .About>h2{
+        font-size: 40px;
+        color:white;
+        text-align: center;
+    }
+
+    .men{
+        display: flex;
+        font-size: 1.1rem;
+    }
+    
+    .h-about{
+        text-align: center;
+        color: white;
+        font-size: 4vw;
+        position: relative;
+    }
+
+    #Capa_1{
+        height: 240px;
+        width: 240px;
+        position: relative;
+        left: 100px;
+    }
+
+    .men{
+        display: flex;
+        color: white;
+        height: 30vh;
+        width: 40vw
+    }
+
+    .About{
+        display: flex;
+        gap: 2vw;
+        margin: 5%;
+        flex-wrap: wrap;
+    }
+
+    .image1{
+        height: 12vh;
+        width: 20vw;
+        border: solid rgb(120, 139, 216) 3px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        box-shadow: 10px 10px 20px white;
+    }
+
+    .image2{
+        height: 12vh;
+        width: 20vw;
+        border: solid rgb(120, 139, 216) 3px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        box-shadow: 10px 10px 20px white;
+    }
+    
+    .image5{height: 12vh;
+        height: 12vh;
+        width: 20vw;
+        border: solid rgb(120, 139, 216) 3px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        box-shadow: 10px 10px 20px white;
+    }
+    
+    .image7{
+        height: 12vh;
+        width: 20vw;
+        border: solid rgb(120, 139, 216) 3px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        flex-wrap: wrap;
+        box-shadow: 10px 10px 20px white;
+    }
+
+    .image8{
+        height: 12vh;
+        width: 20vw;
+        border: solid rgb(120, 139, 216) 3px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        box-shadow: 10px 10px 20px white; 
+    }
+
+    .image9{
+        height: 12vh;
+        width: 20vw;
+        border: solid rgb(120, 139, 216) 3px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        box-shadow: 10px 10px 20px white;
+    }
+    
+    .short-img{
+        height: 7vh;
+        width: 5vw;
+        margin: 2px;
+    }
+    
+    .img-box{
+        width: fit-content;
+        display: grid;
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       flex-wrap: wrap;
+    }
+    
+    .box3{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBRwKlnyxtfKQ46TxsNVtY3Juy1RdBujj3ig&usqp=CAU);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 97.5vw;
+    }
+    
+    .box3>h1{
+        color: white;
+        text-align: center;
+        font-size: 6vw;
+        
+    }
+
+    .box3-img1{
+        border: double 5px rgb(19, 19, 20);
+        border-radius: 20px;
+        height: 80%;
+        width: 60%;
+        margin: 2vw;
+        box-shadow: 10px 10px 20px white;  
+    }
+
+    .box3-text1{
+        color: white;
+       font-size: 2vw;
+       width: 40%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       margin: 2vw;
+    }
+    
+    .box3-text1>h3{
+        text-decoration: underline 2px rgb(23, 23, 24);
+    }
+    
+    .box3-text1>h3:hover{
+        color: red;
+    }
+
+    .project1{
+        display: flex;
+    }
+
+    .box3-img2{
+        border: double 5px rgb(25, 25, 27);
+        border-radius: 20px;
+        height: 80%;
+        width: 60%;
+        margin: 2vw;
+        box-shadow: 10px 10px 20px white;
+    }
+    
+    .box3-text2{
+        color: white;
+       font-size: 2vw;
+       width: 40%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       margin: 2vw;
+    }
+
+    .box3-text2>h3{
+        text-decoration: underline 2px rgb(29, 29, 32);
+    }
+
+    .box3-text2>h3:hover{
+        color: red;
+    }
+
+    .project2{
+        display: flex;
+    }
+    
+    .project3{
+        display: flex;
+    }
+
+    .box3-img3{
+        border: double 5px rgb(15, 15, 15);
+        border-radius: 20px;
+        height: 50%;
+        width:90%;
+        margin: 2vw;
+        box-shadow: 10px 10px 20px white;
+    }
+
+    .box3-text3{
+        color: white;
+        font-size: 2vw;
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 50px;
+    }
+    
+    .box3-text3>h3{
+        text-decoration: underline 2px rgb(12, 12, 12);
+    }
+
+    .box3-text3>h3:hover{
+        color: red;
+    }
+
+    .box4{
+        background-image: url(https://wallpaper-house.com/data/out/6/wallpaper2you_115514.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 97.5vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+    
+    .form{
+        font-size: 20px;
+        color: white;
+        height: 70%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .form-h{
+        font-size:5vw;
+        color: black;
+        margin: 0px;
+        padding: 0px;
+        text-shadow: 10px 10px 5px white;
+    }
+
+    .form-p{
+        font-size: 2vw;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    input{
+        font-size: 100%;
+        text-align: left;
+        margin: 0px;
+        border-radius: 10px;
+    }
+    
+    textarea{
+        font-size: 100%;
+        border-radius: 10px;
+    
+    }
+
+    .form>h1{
+        font-size: 40px;
+    }
+    
+    .icon-box{
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        height: 40px;
+        position: relative;
+        bottom: 30px;
+        gap: 2vw;
+    }
+
+    .icon-img{
+        height: 30px;
+        width: 200px;
+        background-color: white;
+        border: 2px solid black;
+        text-align: center;
+        border-radius: 20px;
+        box-shadow: 10px 10px 10px white;
+    }
+    
+    .icon-img:hover{
+        background-color: rgb(200, 232, 19);
+    }
+    
+    
+</style>
+<body>
+    <nav  class="opction">
+        <a class="home" href="#box1">Home</a>
+        <a class="home" href="#box2">About</a>
+        <a class="home" href="#box3">Projects</a>
+        <a class="home" href="#box4">Contact</a>
+    </nav>
+    
+    <div class="box1" id="box1">
+
+        <div class="box1-img1">
+            <img src="https://i.ibb.co/m6tm4XF/img-25.webp">
+        </div>
+        <div class="header">
+
+                <div class="hading1">
+                    Hello, I'm <samp class="samp">Paras Diwakar</samp> .
+                </div>
+                <div class="header2">
+                    I'm a full stack web developer.
+                </div>
+                <div class="h-button">
+                    <p>View my work </p>
+                </div>
+            
+            </div>
+        </div>
+        
+        <div class="box2" id="box2">
+            <br>
+            <br>
+            <h2 class="h-about">About</h2> 
+            <div class="coding-img">
+                <div class="About">
+                    <div class="men-mig">
+                        <img class="coding" src="https://media.istockphoto.com/id/1372353155/photo/young-asian-programmer-working-at-office.webp?b=1&s=170667a&w=0&k=20&c=1mJP7-bjdudv24rdY6-PtroCGgYSF87h_0_LbQSrgww=">
+                    </div>
+                        <p class="men">Navgurukul (Software Engineering diploma )<br> organized and hard-working student pursuing Software Development Course at Navgurukul Software development program and looking for a responsible position to gain practical experience..</p>
+                </div>
+
+                <div class="img-box">
+                    <div class="image1">
+                        <img src="https://i.ibb.co/QNtK3FW/asset-0.png" class="short-img" >
+                        HTML
+                </div>
+                
+                <div class="image2">
+                    <img src="https://i.ibb.co/y4RZ6SB/asset-3.png" class="short-img" >
+                    JavaScript
+                </div>
+                
+                <div class="image5">
+                    <img src="https://i.ibb.co/9s7t5W6/asset-4.png" 
+                    class="short-img">
+                    CSS
+                </div>
+              
+                
+                <div class="image8">
+                    <img src="https://i.ibb.co/s5Lwbbq/asset-5.png" 
+                    class="short-img">
+                    MONGODB
+                </div>
+                
+                <div class="image9">
+                    <img src="https://i.ibb.co/5jbzywW/asset-9.png"
+                    class="short-img" >
+                    NODE.JS
+                </div>
+                
+                
+            </div>
+                
+         </div> 
+        </div>
+            <div class="box3" id="box3">
+                <br>
+                <br>
+                <h1>Projects</h1>
+                <br>
+                <br>
+                <div class="project1">
+
+                    <div class="box3-img1-box">
+                        <img class="box3-img1" src="./music player.png" >
+                    </div>
+                        
+                        <div class="box3-text1">
+                            <h1> MUSIC PLAYER</h1>
+                            <p>Full stack social media application built with <br>HTML, CSS,JavaScript.</p>    
+                            
+                            <h3>LIVE APP</h3>
+                            <br>
+                            <h3>LEARN MORE</h3>
+                            
+                        </div>
+                    </div>
+                    <div class="project2">
+
+                        <div class="box3-text2">
+                            <h1>CALCULATER</h1>
+                            
+                            <p> calculator with a display, numeric buttons, and basic arithmetic operators.</p>
+                            <a class="cal-a" href="https://github.com/parasdiwakar1/calculater">
+
+                                <h3>LIVE APP</h3>
+                                <br>
+                                <h3>LEARN MORE</h3>
+                            </a>
+                            
+                        </div>
+
+                        <div class="box3-img2-box">
+                            
+                            <img class="box3-img2" src=" https://i.ibb.co/mqcS5HK/calculater.png" >
+                        </div>
+
+                    </div>
+
+                    <div class="project3">
+
+                        <div class="box3-img3-box">
+                            <img class="box3-img3" src="https://www.piecex.com/product_image/20200704083558-00001583-rockpaperscissorsgame-cropped.png" >
+                        </div>
+                            
+                            <div class="box3-text3">
+                                <h1>Rock Paper Scissors Game</h1>
+                                <p>simple rock paper scissors game. When the user clicks on one of the buttons, the computer will randomly pick either a rock, a paper a scissors and a winner</p>    
+                                
+                                <h3>LIVE APP</h3>
+                                <br>
+                                <h3>LEARN MORE</h3>
+                                
+                            </div>   
+                    </div>
+            
+        </div>
+
+        <div class="box4" id="box4">
+
+            <div class="form">
+                <p class="form-h">Contact</p>
+                
+                <p class="form-p" > Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.</p>
+                <br>
+                <label for="Name">Name :</label>
+                <input type="text" required>
+                <label for="Gmail">Gmail :</label>
+                <input type="email" required>
+                
+                <label for="massage">Massage :</label>
+                
+                <textarea name="message" rows="3" cols="20" required>
+                </textarea>
+                <br>
+                <input  class="submit" type="submit">
+            </div>
+
+            <div class="icon-box">
+
+                 <a href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQGYTfyJeaAFZAAAAY1leplwzg2Ke2M5kFDBu3c6N2jnDlMKP87ZpXAj74Z2zh4VDzDkbF5XweNBACkwJhbJkxRNgs8rl00A48gINqJClGkNv1zQtGqqLRByiEWD1EUeov7Gnbc=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fparas-diwakar-738611280%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app">
+                    
+                        <div class="icon-img">
+
+                             <i style="font-size:24px" class="fa">&#xf08c;</i>
+                        </div>
+                    </a>
+                    
+                    <a href="https://mail.google.com/mail/u/0/#inbox">
+
+                        <div class="icon-img">
+                            <i style="font-size:24px" class="fa">&#xf0e0;</i>
+                        </div>
+
+                    </a>
+
+                    <a href="https://github.com/parasdiwakar1/curd/blob/main/crud.py">
+
+                        <div class="icon-img">
+                                
+                            <i style="font-size:24px" class="fa">&#xf09b;</i>
+                        </div>
+                    </a>
+            </div>
+           
+        </div>
+        
+</body>
+</html>
